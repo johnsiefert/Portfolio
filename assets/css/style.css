@@ -4,15 +4,26 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.max-width{
+    max-width: 2500px;
+    padding: 0 80px;
+    margin: auto;
+}
 /*navbar styling*/
 .navbar{
-    position:fixed;
+    position: fixed;
     width: 100%;
-    background: darkblue;
+    padding: 15px 0;
+    background: url("../images/background.jpg") no-repeat center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .navbar .logo a{
-    color: #fff;
+    color: limegreen;
     font-size: 35px;
     font-weight: 600;
 }
@@ -22,5 +33,32 @@
 
 }
 .navbar .menu li a{
-    color: #fff;
+    color: limegreen;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+/*Home Section*/
+.home{
+    display: flex;
+    background: url("../images/background.jpg") no-repeat center;
+    height: 100vh;
+    color: limegreen;
+    min-height: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 25px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600px;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+    margin: 5px 0;
 }
