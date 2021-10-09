@@ -11,12 +11,13 @@
 }
 /*navbar styling*/
 .navbar{
-    position: fixed;
+    padding: 0 30px;
     width: 100%;
-    padding: 15px 0;
-    background: url("../images/background.jpg") no-repeat center;
+    padding: 30px 0;
+    background: url("../images/background.jpg");
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    z-index: 9999;
+   }
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -37,19 +38,27 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3 ease;
 }
+.navbar .menu li a:hover{
+    color: #fff;
+}
+
 /*Home Section*/
-.home{
+.home{ 
     display: flex;
     background: url("../images/background.jpg") no-repeat center;
     height: 100vh;
     color: limegreen;
+    width: 100%;
     min-height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+  }
 .home .max-width{
-    margin: auto 0 auto 40px;
-}
+    position: absolute;
+    top: 200px;
+    font-size: 18px;
+    }
 .home .home-content .text-1{
     font-size: 25px;
 }
@@ -62,3 +71,66 @@
     font-size: 35px;
     margin: 5px 0;
 }
+
+.Projects{ 
+    color: limegreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.Projects .max-width{
+    position: absolute;
+    top: 600px;
+    font-size: 18px;
+    }
+.Projects .Projects-content .text-4{
+    font-size: 75px;
+    font-weight: 600px;
+    margin-left: -3px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query screen*/
+@media screen and (max-width: 980px){
+    .max-width{
+        padding: 0 50px
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+      .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+    }
+    }
+
