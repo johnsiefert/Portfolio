@@ -1,3 +1,9 @@
+:root{
+    --primary-color: limegreen;
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +15,10 @@
     padding: 0 80px;
     margin: auto;
 }
+
+p {
+    margin: center;
+}
 /*navbar styling*/
 .navbar{
     padding: 0 30px;
@@ -16,6 +26,14 @@
     padding: 30px 0;
     background: url("../images/background.jpg");
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     z-index: 9999;
    }
 .navbar .max-width{
@@ -24,7 +42,7 @@
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: limegreen;
+    color: var(--primary-color);
     font-size: 35px;
     font-weight: 600;
 }
@@ -34,7 +52,7 @@
 
 }
 .navbar .menu li a{
-    color: limegreen;
+    color: var(--primary-color);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -49,7 +67,7 @@
     display: flex;
     background: url("../images/background.jpg") no-repeat center;
     height: 100vh;
-    color: limegreen;
+    color: var(--primary-color);
     width: 100%;
     min-height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -59,21 +77,18 @@
     top: 200px;
     font-size: 18px;
     }
-.home .home-content .text-1{
-    font-size: 25px;
-}
-.home .home-content .text-2{
+
+.About{ 
+    color: var(--primary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 75px;
     font-weight: 600px;
     margin-left: -3px;
-}
-.home .home-content .text-3{
-    font-size: 35px;
-    margin: 5px 0;
-}
+ }
 
+/*Projects Styles*/
 .Projects{ 
-    color: limegreen;
+    color: var(--primary-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
@@ -82,14 +97,79 @@
     top: 600px;
     font-size: 18px;
     }
-.Projects .Projects-content .text-4{
+.Projects .Projects-content .title-1{
     font-size: 75px;
     font-weight: 600px;
     margin-left: -3px;
+}
+
+/* Grid Portfolio Structure */
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(150px, 1fr);
+    margin-right: 500px;
+}
+
+.grid-item {
+    grid-column: span 2;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.8rem;
+}
+
+/* Grid Portfolio - Feature First Child */
+.grid-item:first-child {
+    grid-column: span 8;
+    grid-row: span 1;
+}
+
+.grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.grid-item div {
+    padding: 8px 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.4rem;
+}
 
 
+/*Contact Me Styles*/
+.Contact{
+    color: var(--primary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+.Contact .max-width{
+    position: absolute;
+    bottom: 100px;
+    font-size: 18px;
+     }
+.Contact .Contact-content .title-2{
+    font-size: 75px;
+     font-weight: 600px;
+     margin-left: -3px;
+}
 
-
+/*Images*/
+.Horiseon {
+    background-image: url("../images/horiseon.png");
+}
+.Run-Buddy{
+    background-image: url("../images/Run-buddy.png");
+}
 
 
 
