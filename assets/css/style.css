@@ -1,6 +1,5 @@
 /* PORTFOLIO CSS STYLES*/
 
-
 * {
     box-sizing: border-box;
 }
@@ -41,8 +40,7 @@ header {
     align-items: center;
     background-color: var(--tertiary);
     box-shadow: 0 5px 35px rgb(240,121,82);
-    background-image: url("../images/background-3.jpg");
-   }
+}
 
 header h1 {
     color: var(--tertiary);
@@ -51,7 +49,7 @@ header h1 {
     margin: 0;
     font-size: 3vw;
     line-height: 1;
-  }
+}
 
 header a:hover {
     color: var(--light);
@@ -62,7 +60,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   }
+}
 
 nav a {
     text-decoration: none;
@@ -75,7 +73,7 @@ nav a {
     background-position: bottom;
     transition: all 0.1s ease-in;
     font-size: 1.4rem;
-    }
+}
 
 nav a:hover {
     background-size: 100% 100%;
@@ -93,6 +91,48 @@ main {
 
 .light {
     color: var(--light);
+}
+
+/* Hero Content */
+.hero-banner {
+    background: rgb(68, 88, 120);
+    background-image: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 20vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 10vw;
+}
+
+.hero-banner img {
+    width: 150px;
+    margin: 20px;
+    border-radius: 10%;
+    opacity: 0.8;
+}
+
+.hero-banner img:hover{
+    opacity: 1;
+}
+
+.hero-banner div {
+    flex: 0 0 90%;
+}
+
+.hero-banner h2 {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 3.0rem;
+    line-height: 1.2;
+    display: inline;
 }
 
 /* Main Page Content */
@@ -184,7 +224,6 @@ main {
 .horiseon {
     background-image: url("../images/horiseon.png");
 }
-
 
 /* Contact Section */
 .contact address {
