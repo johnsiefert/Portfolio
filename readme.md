@@ -1,3 +1,5 @@
+readme.md
+
 This Challenge #2 is for the Bootcamp
 
 First I created the html file. Which includes the following:
@@ -15,5 +17,4 @@ Here is a link to the page.
 https://johnsiefert.github.io/Portfolio/
 
 here is a screenshot:
-![image](./assets/images/portfolio.png)
-
+![portfolio](https://user-images.githubusercontent.com/91295870/139539119-ccf74cf6-b2ae-4c57-b2c5-c62529dd0e98.png)
