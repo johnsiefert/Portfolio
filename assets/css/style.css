@@ -200,7 +200,7 @@ main {
 /* Grid Portfolio - Feature First Child */
 .grid-item:first-child {
     grid-column: span 8;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
 .grid-item:hover {
@@ -223,6 +223,12 @@ main {
 
 .horiseon {
     background-image: url("../images/horiseon.png");
+}
+.barFly {
+    background-image: url("../images/barfly.png");
+}
+.fantasy{
+    background-image: url("../images/fantasy.png");
 }
 
 /* Contact Section */
